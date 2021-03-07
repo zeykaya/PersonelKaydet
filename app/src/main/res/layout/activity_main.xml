@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="366dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="personel numarasını giriniz"
+        android:inputType="number"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/etPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPersonName"
+        android:layout_width="360dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="personel adı soyadı"
+        android:inputType="textPersonName"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/etPersonelMaas"
+        app:layout_constraintEnd_toEndOf="@+id/etNumber"
+        app:layout_constraintStart_toStartOf="@+id/etNumber"
+        app:layout_constraintTop_toBottomOf="@+id/etNumber" />
+
+    <EditText
+        android:id="@+id/etPersonelMaas"
+        android:layout_width="366dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="personel maaşını giriniz"
+        android:inputType="number"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEkle"
+        app:layout_constraintEnd_toEndOf="@+id/etPersonName"
+        app:layout_constraintStart_toStartOf="@+id/etPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/etPersonName"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <Button
+        android:id="@+id/btnEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="EKLE"
+        app:layout_constraintBottom_toTopOf="@+id/tvSonuc"
+        app:layout_constraintEnd_toEndOf="@+id/etPersonelMaas"
+        app:layout_constraintStart_toStartOf="@+id/etPersonelMaas"
+        app:layout_constraintTop_toBottomOf="@+id/etPersonelMaas"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvSonuc"
+        android:layout_width="355dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:text=" "
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnEkle"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="@+id/btnEkle"
+        app:layout_constraintTop_toBottomOf="@+id/btnEkle"
+        app:layout_constraintVertical_bias="0.663" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1090088868566",
+    "project_id": "personeltakip-56aa0",
+    "storage_bucket": "personeltakip-56aa0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090088868566:android:9d93a1511a89d6a0c3c777",
+        "android_client_info": {
+          "package_name": "com.kaya.personelkaydet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090088868566-4qeo5v3jq5a9ij85b6g14vanu7a80s0a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kaya.personelkaydet",
+            "certificate_hash": "2061e7126773cdb440ae726d9c88cebce0220896"
+          }
+        },
+        {
+          "client_id": "1090088868566-6m8sqs8q0itkgajp8k7l84vmrot2renp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdAEWCqMXX4idwMd6Ov9yQNO0EV53L0f8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090088868566-6m8sqs8q0itkgajp8k7l84vmrot2renp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
